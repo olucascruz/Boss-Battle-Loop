@@ -1,0 +1,922 @@
+fileFormatVersion: 2
+guid: 1f6c9892e815eae48b8bd5335ed089bc
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Player Side-Left Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 179
+        width: 16
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7a1e8d2cba900345b8fb1b7a811a9b7
+      internalID: -576742799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Side-Left Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 179
+        width: 16
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3c827d93f989f84e975be0421f91137
+      internalID: -1909644783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Side-Left Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 179
+        width: 16
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc490e55f38591e458718653728adddd
+      internalID: 1130334546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Side-Left Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 179
+        width: 16
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5c1f063123a5404cbd0c66822feef5d
+      internalID: 611783033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Side-Left Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 179
+        width: 16
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b08f4d0fb1e9da46bea06396af62f4b
+      internalID: -1865012977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Side-Left Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 179
+        width: 16
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4689be12a73967444b8bd2f84f2157b1
+      internalID: 469683278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Side-Left Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 135
+        width: 16
+        height: 27
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5e8b82f82ce90445b2ce7520162f0c1
+      internalID: 1729621650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Side-Left Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 135
+        width: 16
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cdfde96b1cecf14aad66efe871ede78
+      internalID: -776237501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Side-Left Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 135
+        width: 16
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b1c52e567e605c4a98e50c0cd143ed8
+      internalID: -802305705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Side-Left Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 135
+        width: 16
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 373d8859f022e1649836f555da2f68aa
+      internalID: -947131632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Side-Left Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 135
+        width: 16
+        height: 27
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5469fb1e1e30d4a4dafc58e00a9e4d94
+      internalID: -252588471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Side-Left Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 135
+        width: 16
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45c08d6ff17959e4aa60efd12b75a923
+      internalID: -185459965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Side-Left Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 135
+        width: 16
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6dda1956c3edf046825f2d2287abada
+      internalID: -1120519947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Side-Left Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 135
+        width: 16
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b2669dc343f4f84dbb720aebbd3caaf
+      internalID: 1696612085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Side-Left Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 91
+        width: 16
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb844ea1b6a993c4cb9034f209229cb7
+      internalID: -135313087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Side-Left Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 91
+        width: 16
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c574933ec6088b479a58851be432e55
+      internalID: -1634689253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Side-Left Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 91
+        width: 31
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 981ae4f175cf1ad458ab240fd336f1fc
+      internalID: 1644842894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Side-Left Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 91
+        width: 25
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cb05863be7b5c24691e31376a2dc5e3
+      internalID: -1284726078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Side-Left Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 91
+        width: 22
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df1c090da7f24e04eb265089803a1a56
+      internalID: -2074335443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Side-Left Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 91
+        width: 16
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fca6da0f39f48b74a9a9ea0650e2a998
+      internalID: 1895442503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Side-Left Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 637
+        y: 52
+        width: 22
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c82528cac0c4b7d44803084f3f02bfc6
+      internalID: 289378743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Side-Left Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 2
+        width: 22
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8be11ed5f96a4764ca5d76d9ca7df772
+      internalID: 906175207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Side-Left Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 3
+        width: 20
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2a6fb5f73252a947bf4cd2b1bbfed53
+      internalID: 185229151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Side-Left Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 3
+        width: 16
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b14563c01f93fc4d9594ca772eea7bb
+      internalID: -936930584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Side-Left Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 3
+        width: 18
+        height: 20
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97ec23b9903c5c44fa509792d070c2bb
+      internalID: 444317050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Side-Left Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 3
+        width: 18
+        height: 20
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a60994abd1839b14ab24fad87c82b366
+      internalID: -1592376334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Side-Left Sheet_30
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 3
+        width: 18
+        height: 20
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 156592cfa63b3214d9b8876171e5c4ba
+      internalID: 572889737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Side-Left Sheet_31
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 3
+        width: 18
+        height: 21
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf8f6f90a15f3964dbf2052c0f238a53
+      internalID: -1356621705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Side-Left Sheet_32
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 3
+        width: 19
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f75e0794190963646a07409747e21f8d
+      internalID: -1614772008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Side-Left Sheet_33
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 3
+        width: 19
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a46f1745c7511c24e8946551bf35d85e
+      internalID: -1056200717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Side-Left Sheet_34
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 3
+        width: 22
+        height: 27
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf493192eacceae4080c708cdccc5b40
+      internalID: -282136076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Side-Left Sheet_35
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 3
+        width: 24
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4396a035f49a94044a7262c8186f8998
+      internalID: -128423090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Side-Left Sheet_36
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 3
+        width: 21
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a2c7db6a25ee214fbd30c667e4aadab
+      internalID: 920276390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Side-Left Sheet_37
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 3
+        width: 20
+        height: 36
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb169958122597349a420fcf5e71e53d
+      internalID: -632675707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Side-Left Sheet_38
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 3
+        width: 18
+        height: 38
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f3c96503073f534483d65f86479c4dd
+      internalID: -336879371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Player Side-Left Sheet_37: -632675707
+      Player Side-Left Sheet_9: -947131632
+      Player Side-Left Sheet_14: -135313087
+      Player Side-Left Sheet_2: 1130334546
+      Player Side-Left Sheet_15: -1634689253
+      Player Side-Left Sheet_36: 920276390
+      Player Side-Left Sheet_35: -128423090
+      Player Side-Left Sheet_3: 611783033
+      Player Side-Left Sheet_1: -1909644783
+      Player Side-Left Sheet_8: -802305705
+      Player Side-Left Sheet_18: -2074335443
+      Player Side-Left Sheet_7: -776237501
+      Player Side-Left Sheet_16: 1644842894
+      Player Side-Left Sheet_12: -1120519947
+      Player Side-Left Sheet_31: -1356621705
+      Player Side-Left Sheet_33: -1056200717
+      Player Side-Left Sheet_29: -1592376334
+      Player Side-Left Sheet_4: -1865012977
+      Player Side-Left Sheet_24: -1926324670
+      Player Side-Left Sheet_20: 289378743
+      Player Side-Left Sheet_39: -311461830
+      Player Side-Left Sheet_13: 1696612085
+      Player Side-Left Sheet_38: -336879371
+      Player Side-Left Sheet_0: -576742799
+      Player Side-Left Sheet_5: 469683278
+      Player Side-Left Sheet_11: -185459965
+      Player Side-Left Sheet_21: -1664994732
+      Player Side-Left Sheet_17: -1284726078
+      Player Side-Left Sheet_6: 1729621650
+      Player Side-Left Sheet_34: -282136076
+      Player Side-Left Sheet_28: 444317050
+      Player Side-Left Sheet_22: -1170610366
+      Player Side-Left Sheet_25: 906175207
+      Player Side-Left Sheet_19: 1895442503
+      Player Side-Left Sheet_10: -252588471
+      Player Side-Left Sheet_32: -1614772008
+      Player Side-Left Sheet_26: 185229151
+      Player Side-Left Sheet_23: 430155339
+      Player Side-Left Sheet_27: -936930584
+      Player Side-Left Sheet_30: 572889737
+      Player Side-Left Sheet_40: 2121430654
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

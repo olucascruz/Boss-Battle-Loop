@@ -1,0 +1,1840 @@
+fileFormatVersion: 2
+guid: 93e941d9fbe6b8f47b2d5c5faf4fd492
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: frost_guardian1
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 529
+        width: 81
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 121a548392334434eb3e323f0bfc2acb
+      internalID: -1200761934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frost_guardian2
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 529
+        width: 81
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d59460d8d4a5be48b36eceaccb1e88d
+      internalID: 248956444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frost_guardian3
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 529
+        width: 81
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b5ffeabe972bb141b385a1597b7fa11
+      internalID: -1350056632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frost_guardian4
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 529
+        width: 82
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05085af3852bfd041b0504f0faa393fa
+      internalID: -447320726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frost_guardian5
+      rect:
+        serializedVersion: 2
+        x: 823
+        y: 529
+        width: 81
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11527d7ea37898943be0e63455501670
+      internalID: -861689795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frost_guardian6
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 529
+        width: 81
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f5dc166a57625147bca85f16b51973a
+      internalID: -303096051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frost_guardian_free_192x128_SpriteSheet_6
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 400
+        width: 72
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a2d6d67699faf34ebfea815274ab311
+      internalID: 1630077170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frost_guardian_free_192x128_SpriteSheet_7
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 400
+        width: 72
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6d64d818f3fba54c85e46f6fab650c0
+      internalID: -841601710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frost_guardian_free_192x128_SpriteSheet_8
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 400
+        width: 72
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5c4f5b64cc51854ca4ec0fbb5176b61
+      internalID: 661825041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frost_guardian_free_192x128_SpriteSheet_9
+      rect:
+        serializedVersion: 2
+        x: 637
+        y: 400
+        width: 75
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a238bf249d24f844aba1a48dada4400
+      internalID: -1754261069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frost_guardian_free_192x128_SpriteSheet_10
+      rect:
+        serializedVersion: 2
+        x: 823
+        y: 400
+        width: 86
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ba4c4897a89c244baf3b029a2f831e8
+      internalID: -1274711909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frost_guardian_free_192x128_SpriteSheet_11
+      rect:
+        serializedVersion: 2
+        x: 1009
+        y: 400
+        width: 96
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cda8387f2cad9c4582115bd9fa78f8d
+      internalID: 1137652287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frost_guardian_free_192x128_SpriteSheet_12
+      rect:
+        serializedVersion: 2
+        x: 1201
+        y: 400
+        width: 96
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ef23dec32d6da74d89c5a6cd0df6a83
+      internalID: -2070972996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frost_guardian_free_192x128_SpriteSheet_13
+      rect:
+        serializedVersion: 2
+        x: 1399
+        y: 400
+        width: 86
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ef5fdeecf2cc4d4b8a8638dd486b9ff
+      internalID: 925543086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frost_guardian_free_192x128_SpriteSheet_14
+      rect:
+        serializedVersion: 2
+        x: 1597
+        y: 400
+        width: 75
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c38108185a4ece4590e226061287818
+      internalID: 1111286876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frost_guardian_free_192x128_SpriteSheet_15
+      rect:
+        serializedVersion: 2
+        x: 1789
+        y: 400
+        width: 72
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cbec2a01be20f4408fe13c624a7bb16
+      internalID: -320780965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frost_guardian_free_192x128_SpriteSheet_16
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 273
+        width: 81
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d77bc0adfe18f848a935fe82eb90315
+      internalID: 461281847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frost_guardian_free_192x128_SpriteSheet_17
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 273
+        width: 93
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10d79d997d835e54abc4ad203e34d51e
+      internalID: 861941995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frost_guardian_free_192x128_SpriteSheet_18
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 273
+        width: 94
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22a7c05edcde88943a419bd87c6f8854
+      internalID: -2083257393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frost_guardian_free_192x128_SpriteSheet_19
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 273
+        width: 95
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a0b6a28c69df08488e1b0ed0a6ee0be
+      internalID: 258257255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frost_guardian_free_192x128_SpriteSheet_20
+      rect:
+        serializedVersion: 2
+        x: 823
+        y: 273
+        width: 96
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6df9c0ff87a58d42b1bf90bd24ef448
+      internalID: -1361059173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frost_guardian_free_192x128_SpriteSheet_21
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 273
+        width: 96
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4660f17e66f89f42a2a458910180a4a
+      internalID: 1936452782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frost_guardian_free_192x128_SpriteSheet_22
+      rect:
+        serializedVersion: 2
+        x: 1156
+        y: 273
+        width: 138
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5ecd6606fa568f48ac29823a6f920ea
+      internalID: -16135867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frost_guardian_free_192x128_SpriteSheet_23
+      rect:
+        serializedVersion: 2
+        x: 1345
+        y: 273
+        width: 141
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 439377d4a8f358446b19fba9df084f6d
+      internalID: -474229859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frost_guardian_free_192x128_SpriteSheet_24
+      rect:
+        serializedVersion: 2
+        x: 1537
+        y: 273
+        width: 141
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7fe70c6cbfb0714f8e1c6e5d96f6025
+      internalID: -1739497781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frost_guardian_free_192x128_SpriteSheet_25
+      rect:
+        serializedVersion: 2
+        x: 1770
+        y: 273
+        width: 85
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cadd290bb614f884883bfe22f4fb1ace
+      internalID: 398924616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frost_guardian_free_192x128_SpriteSheet_26
+      rect:
+        serializedVersion: 2
+        x: 1986
+        y: 273
+        width: 52
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60bbffced635bf94f94a0cdf836d6f4c
+      internalID: -427237952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frost_guardian_free_192x128_SpriteSheet_27
+      rect:
+        serializedVersion: 2
+        x: 2178
+        y: 273
+        width: 58
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a3f5bffeecfd574d947f0203a795252
+      internalID: -335206400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frost_guardian_free_192x128_SpriteSheet_28
+      rect:
+        serializedVersion: 2
+        x: 2358
+        y: 273
+        width: 73
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d4e0441af91e614dabf5472497c29f3
+      internalID: 281761546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frost_guardian_free_192x128_SpriteSheet_29
+      rect:
+        serializedVersion: 2
+        x: 2551
+        y: 273
+        width: 81
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f3e3c74c53cc0241baa46a7b06dee67
+      internalID: 152722447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frost_guardian_free_192x128_SpriteSheet_30
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 145
+        width: 81
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9b4e467ffac90b4385d08b609c5179e
+      internalID: 1708188387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frost_guardian_free_192x128_SpriteSheet_31
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 145
+        width: 78
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c34d32539a2a9de45b262ad29bf57520
+      internalID: 1684515325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frost_guardian_free_192x128_SpriteSheet_32
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 145
+        width: 78
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f62558102f19f46489010a9201785b19
+      internalID: 1498469969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frost_guardian_free_192x128_SpriteSheet_33
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 145
+        width: 78
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b6773cd47000714bb96174b485319be
+      internalID: -1245112543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frost_guardian_free_192x128_SpriteSheet_34
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 145
+        width: 78
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9a35d7504d4e864c8593e119c3563b4
+      internalID: 464685468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frost_guardian_free_192x128_SpriteSheet_35
+      rect:
+        serializedVersion: 2
+        x: 1018
+        y: 145
+        width: 78
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bddeb85b21c70c94d900af208e67a52d
+      internalID: -847547316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frost_guardian_free_192x128_SpriteSheet_36
+      rect:
+        serializedVersion: 2
+        x: 1207
+        y: 145
+        width: 81
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31e9851e32f28d34aa1b74e326fc6131
+      internalID: 1143020404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frost_guardian_free_192x128_SpriteSheet_37
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 16
+        width: 81
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2320fa529a2aafc4cb3c05de3db2fb6b
+      internalID: -727629076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frost_guardian_free_192x128_SpriteSheet_38
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 16
+        width: 72
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03e07f7fbdc228344a5eaeac9e37ed52
+      internalID: 1484293222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frost_guardian_free_192x128_SpriteSheet_39
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 16
+        width: 69
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ff4a837e8cbc35478cca46d50e56842
+      internalID: -124752832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frost_guardian_free_192x128_SpriteSheet_40
+      rect:
+        serializedVersion: 2
+        x: 637
+        y: 16
+        width: 72
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20764afa2093f154c99dd481a02b48d5
+      internalID: 76525918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frost_guardian_free_192x128_SpriteSheet_41
+      rect:
+        serializedVersion: 2
+        x: 817
+        y: 16
+        width: 105
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0eb615f21aecc334a97386372ed3eb98
+      internalID: 1051469961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frost_guardian_free_192x128_SpriteSheet_42
+      rect:
+        serializedVersion: 2
+        x: 999
+        y: 16
+        width: 118
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc833705005c73841a70ba3ec78059f0
+      internalID: -1084172203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frost_guardian_free_192x128_SpriteSheet_43
+      rect:
+        serializedVersion: 2
+        x: 1191
+        y: 16
+        width: 120
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63a3928c820e6c24dac7ebc651dadbd3
+      internalID: 292924674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frost_guardian_free_192x128_SpriteSheet_44
+      rect:
+        serializedVersion: 2
+        x: 1384
+        y: 16
+        width: 114
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72a5ec110087d924cb762f3baeddcaa0
+      internalID: -419905971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frost_guardian_free_192x128_SpriteSheet_45
+      rect:
+        serializedVersion: 2
+        x: 1624
+        y: 79
+        width: 21
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80cfd9143d9f0564fb63c93ade7c4643
+      internalID: -223494995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frost_guardian_free_192x128_SpriteSheet_46
+      rect:
+        serializedVersion: 2
+        x: 1657
+        y: 76
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06495823bd0bc6e479a660445a032867
+      internalID: -299570067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frost_guardian_free_192x128_SpriteSheet_47
+      rect:
+        serializedVersion: 2
+        x: 1816
+        y: 79
+        width: 21
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b19eefbc5955c446b8075384ab0b21c
+      internalID: 919937793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frost_guardian_free_192x128_SpriteSheet_48
+      rect:
+        serializedVersion: 2
+        x: 1849
+        y: 76
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0c18f23cd498dd42b2a5e10b106c373
+      internalID: 496320764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frost_guardian_free_192x128_SpriteSheet_49
+      rect:
+        serializedVersion: 2
+        x: 2008
+        y: 75
+        width: 21
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38dd95cf13f57414096d5361134135fe
+      internalID: -1297313017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frost_guardian_free_192x128_SpriteSheet_50
+      rect:
+        serializedVersion: 2
+        x: 2041
+        y: 70
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99ee8d5135059b14d9f29e13ec6517fc
+      internalID: 1043668969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frost_guardian_free_192x128_SpriteSheet_51
+      rect:
+        serializedVersion: 2
+        x: 1545
+        y: 16
+        width: 165
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bb6af51fd13120468bd76b359a39ac0
+      internalID: 91031348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frost_guardian_free_192x128_SpriteSheet_52
+      rect:
+        serializedVersion: 2
+        x: 1581
+        y: 55
+        width: 24
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aeb81081402bb4543976fe7afe4effd7
+      internalID: -807221642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frost_guardian_free_192x128_SpriteSheet_53
+      rect:
+        serializedVersion: 2
+        x: 1666
+        y: 55
+        width: 23
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a920a861c8efd14d88b5dcca1d06cd6
+      internalID: 1837070352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frost_guardian_free_192x128_SpriteSheet_54
+      rect:
+        serializedVersion: 2
+        x: 1773
+        y: 55
+        width: 24
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9615e37e21bd0f04eb8f246fe56534ca
+      internalID: -1986134209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frost_guardian_free_192x128_SpriteSheet_55
+      rect:
+        serializedVersion: 2
+        x: 1815
+        y: 36
+        width: 25
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc1f34fee9a098a49b9a8ed29056f004
+      internalID: 2112446094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frost_guardian_free_192x128_SpriteSheet_56
+      rect:
+        serializedVersion: 2
+        x: 1858
+        y: 55
+        width: 23
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ed1700c6dae514448c096b1242d6852
+      internalID: -821953147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frost_guardian_free_192x128_SpriteSheet_57
+      rect:
+        serializedVersion: 2
+        x: 1965
+        y: 51
+        width: 24
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e5f27e895a118647b56507052cb7906
+      internalID: -185310551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frost_guardian_free_192x128_SpriteSheet_58
+      rect:
+        serializedVersion: 2
+        x: 2007
+        y: 31
+        width: 25
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b39954d58cae17428df7816c8b53007
+      internalID: -865120290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frost_guardian_free_192x128_SpriteSheet_59
+      rect:
+        serializedVersion: 2
+        x: 2050
+        y: 51
+        width: 23
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c55524f8f39541141903aeea79f07907
+      internalID: -1796791111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frost_guardian_free_192x128_SpriteSheet_60
+      rect:
+        serializedVersion: 2
+        x: 2200
+        y: 57
+        width: 21
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2775a5f800c626b46b7a7b6d269cd70b
+      internalID: 1043613702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frost_guardian_free_192x128_SpriteSheet_61
+      rect:
+        serializedVersion: 2
+        x: 2233
+        y: 52
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14853543d33c7af49be6c08385de3f54
+      internalID: -1871133651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frost_guardian_free_192x128_SpriteSheet_62
+      rect:
+        serializedVersion: 2
+        x: 1731
+        y: 16
+        width: 184
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe25701e56be3434e9cd17f24513a6d8
+      internalID: 1534257156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frost_guardian_free_192x128_SpriteSheet_63
+      rect:
+        serializedVersion: 2
+        x: 1923
+        y: 16
+        width: 184
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efd15df3c10819a4faaee983d6c71083
+      internalID: 963496852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frost_guardian_free_192x128_SpriteSheet_64
+      rect:
+        serializedVersion: 2
+        x: 2157
+        y: 33
+        width: 24
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f92b5febcbe1064fbbbd491d4e03604
+      internalID: -1377594752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frost_guardian_free_192x128_SpriteSheet_65
+      rect:
+        serializedVersion: 2
+        x: 2242
+        y: 33
+        width: 23
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0168caba7276434f9a28f7453071ea7
+      internalID: -705675385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frost_guardian_free_192x128_SpriteSheet_66
+      rect:
+        serializedVersion: 2
+        x: 2323
+        y: 16
+        width: 50
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e499fe9b88e0bcc44b3041162634b8a6
+      internalID: 1613957576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frost_guardian_free_192x128_SpriteSheet_67
+      rect:
+        serializedVersion: 2
+        x: 2376
+        y: 16
+        width: 109
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db92e5aace2aad648b8f735193ac581b
+      internalID: -1366291956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frost_guardian_free_192x128_SpriteSheet_68
+      rect:
+        serializedVersion: 2
+        x: 2115
+        y: 16
+        width: 48
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 841d392b518a60c43af660da0299cfd0
+      internalID: 1000875858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frost_guardian_free_192x128_SpriteSheet_69
+      rect:
+        serializedVersion: 2
+        x: 2169
+        y: 16
+        width: 84
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d050190d20d63144aa4ce310d676f1c8
+      internalID: 263236268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frost_guardian_free_192x128_SpriteSheet_70
+      rect:
+        serializedVersion: 2
+        x: 2259
+        y: 16
+        width: 40
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 577f6c75df630cf439f584ac0cdb461d
+      internalID: -1206585341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frost_guardian_free_192x128_SpriteSheet_71
+      rect:
+        serializedVersion: 2
+        x: 2517
+        y: 16
+        width: 46
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c2c9d6add25f9c47bdd39b751e2bb48
+      internalID: -378045804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frost_guardian_free_192x128_SpriteSheet_72
+      rect:
+        serializedVersion: 2
+        x: 2568
+        y: 15
+        width: 106
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab8c1abf2d264a6489795299de94e30a
+      internalID: -1494708299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frost_guardian_free_192x128_SpriteSheet_73
+      rect:
+        serializedVersion: 2
+        x: 2733
+        y: 16
+        width: 22
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97936728676661048bb66594c00a381a
+      internalID: -1776278577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frost_guardian_free_192x128_SpriteSheet_74
+      rect:
+        serializedVersion: 2
+        x: 2760
+        y: 13
+        width: 79
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 243005170a03063488944e676fd61f4c
+      internalID: 1799636740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frost_guardian_free_192x128_SpriteSheet_75
+      rect:
+        serializedVersion: 2
+        x: 2925
+        y: 16
+        width: 22
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20ac81c7cb143fb4dbb0d6486df1f5c3
+      internalID: -488475935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frost_guardian_free_192x128_SpriteSheet_76
+      rect:
+        serializedVersion: 2
+        x: 2952
+        y: 13
+        width: 79
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7221e9c1c704a84e88b613fc5456985
+      internalID: -196534489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      frost_guardian_free_192x128_SpriteSheet_59: -1796791111
+      frost_guardian_free_192x128_SpriteSheet_22: -16135867
+      frost_guardian_free_192x128_SpriteSheet_23: -474229859
+      frost_guardian_free_192x128_SpriteSheet_42: -1084172203
+      frost_guardian_free_192x128_SpriteSheet_24: -1739497781
+      frost_guardian_free_192x128_SpriteSheet_70: -1206585341
+      frost_guardian_free_192x128_SpriteSheet_29: 152722447
+      frost_guardian_free_192x128_SpriteSheet_71: -378045804
+      frost_guardian_free_192x128_SpriteSheet_65: -705675385
+      frost_guardian_free_192x128_SpriteSheet_14: 1111286876
+      frost_guardian_free_192x128_SpriteSheet_27: -335206400
+      frost_guardian_free_192x128_SpriteSheet_68: 1000875858
+      frost_guardian5: -861689795
+      frost_guardian_free_192x128_SpriteSheet_67: -1366291956
+      frost_guardian_free_192x128_SpriteSheet_30: 1708188387
+      frost_guardian_free_192x128_SpriteSheet_45: -223494995
+      frost_guardian_free_192x128_SpriteSheet_36: 1143020404
+      frost_guardian_free_192x128_SpriteSheet_55: 2112446094
+      frost_guardian_free_192x128_SpriteSheet_64: -1377594752
+      frost_guardian_free_192x128_SpriteSheet_72: -1494708299
+      frost_guardian_free_192x128_SpriteSheet_18: -2083257393
+      frost_guardian_free_192x128_SpriteSheet_76: -196534489
+      frost_guardian_free_192x128_SpriteSheet_11: 1137652287
+      frost_guardian_free_192x128_SpriteSheet_12: -2070972996
+      frost_guardian_free_192x128_SpriteSheet_37: -727629076
+      frost_guardian_free_192x128_SpriteSheet_15: -320780965
+      frost_guardian_free_192x128_SpriteSheet_10: -1274711909
+      frost_guardian_free_192x128_SpriteSheet_28: 281761546
+      frost_guardian_free_192x128_SpriteSheet_40: 76525918
+      frost_guardian_free_192x128_SpriteSheet_16: 461281847
+      frost_guardian_free_192x128_SpriteSheet_19: 258257255
+      frost_guardian_free_192x128_SpriteSheet_49: -1297313017
+      frost_guardian_free_192x128_SpriteSheet_8: 661825041
+      frost_guardian_free_192x128_SpriteSheet_25: 398924616
+      frost_guardian_free_192x128_SpriteSheet_56: -821953147
+      frost_guardian_free_192x128_SpriteSheet_63: 963496852
+      frost_guardian_free_192x128_SpriteSheet_75: -488475935
+      frost_guardian2: 248956444
+      frost_guardian6: -303096051
+      frost_guardian_free_192x128_SpriteSheet_43: 292924674
+      frost_guardian_free_192x128_SpriteSheet_35: -847547316
+      frost_guardian1: -1200761934
+      frost_guardian_free_192x128_SpriteSheet_9: -1754261069
+      frost_guardian_free_192x128_SpriteSheet_20: -1361059173
+      frost_guardian_free_192x128_SpriteSheet_38: 1484293222
+      frost_guardian_free_192x128_SpriteSheet_21: 1936452782
+      frost_guardian_free_192x128_SpriteSheet_32: 1498469969
+      frost_guardian_free_192x128_SpriteSheet_60: 1043613702
+      frost_guardian_free_192x128_SpriteSheet_44: -419905971
+      frost_guardian_free_192x128_SpriteSheet_31: 1684515325
+      frost_guardian_free_192x128_SpriteSheet_74: 1799636740
+      frost_guardian_free_192x128_SpriteSheet_73: -1776278577
+      frost_guardian_free_192x128_SpriteSheet_17: 861941995
+      frost_guardian_free_192x128_SpriteSheet_41: 1051469961
+      frost_guardian_free_192x128_SpriteSheet_33: -1245112543
+      frost_guardian_free_192x128_SpriteSheet_58: -865120290
+      frost_guardian_free_192x128_SpriteSheet_50: 1043668969
+      frost_guardian_free_192x128_SpriteSheet_57: -185310551
+      frost_guardian_free_192x128_SpriteSheet_48: 496320764
+      frost_guardian_free_192x128_SpriteSheet_39: -124752832
+      frost_guardian_free_192x128_SpriteSheet_13: 925543086
+      frost_guardian_free_192x128_SpriteSheet_26: -427237952
+      frost_guardian_free_192x128_SpriteSheet_6: 1630077170
+      frost_guardian_free_192x128_SpriteSheet_46: -299570067
+      frost_guardian_free_192x128_SpriteSheet_34: 464685468
+      frost_guardian_free_192x128_SpriteSheet_61: -1871133651
+      frost_guardian_free_192x128_SpriteSheet_51: 91031348
+      frost_guardian_free_192x128_SpriteSheet_62: 1534257156
+      frost_guardian3: -1350056632
+      frost_guardian_free_192x128_SpriteSheet_53: 1837070352
+      frost_guardian_free_192x128_SpriteSheet_54: -1986134209
+      frost_guardian_free_192x128_SpriteSheet_52: -807221642
+      frost_guardian_free_192x128_SpriteSheet_47: 919937793
+      frost_guardian_free_192x128_SpriteSheet_66: 1613957576
+      frost_guardian_free_192x128_SpriteSheet_7: -841601710
+      frost_guardian_free_192x128_SpriteSheet_69: 263236268
+      frost_guardian4: -447320726
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
