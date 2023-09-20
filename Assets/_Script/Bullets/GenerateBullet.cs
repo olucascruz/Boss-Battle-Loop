@@ -7,15 +7,14 @@ public class GenerateBullet : MonoBehaviour
     [SerializeField]
     private GameObject Bullet;
 
-    [SerializeField]
-    private AudioSource ShootSound;
     private GameController gc;
     private MobileButtonShoot mbs;
+    private SoundManager soundManager;
     void Start()
     {
         gc = GameController.gc;
         mbs = MobileButtonShoot.mbs;
-
+        soundManager = SoundManager.Instance;
     }
 
     void Update()
@@ -29,7 +28,6 @@ public class GenerateBullet : MonoBehaviour
         if((Input.GetButtonDown("Fire1") || mobileFire) && gc.UseBullet() && gc.GetPlayerLife() > 0)
         {
             Shoot();
-            ShootSound.Play();
             if (mbs)
             {
                 mbs.SetFireTouch(false);
@@ -42,6 +40,11 @@ public class GenerateBullet : MonoBehaviour
     private void Shoot()
     {
         Instantiate(Bullet, transform.position, transform.rotation);
+        if(soundManager){
+            soundManager.ShootPlayerSoundPlay();
+        }else{
+            print("Sound manager not found");
+        }
     }
 
 

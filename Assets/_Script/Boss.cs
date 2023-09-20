@@ -8,61 +8,73 @@ public class Boss : MonoBehaviour
 
     private GameObject BossLifeSpace;
 
-    [SerializeField]
-    private Transform[] positionsPoint;
-    [SerializeField]
-    private float speed;
+    [SerializeField] private GameObject[] positionsPoint;
 
-    private Transform Target = null;
+    [SerializeField] private float speed;
+
+    private Vector3 target = Vector3.zero;
+
+    [SerializeField] GenerateBulletBoss generateBulletBoss;
     void Start()
     {
         gc = GameController.gc;
         BossLifeSpace = gc.GetBossLifeSpace();
-        Invoke("Move1", 1f);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        Death();
-    }
 
     void FixedUpdate(){
          BossLifeSpace.transform.position = new Vector3(transform.position.x, transform.position.y+0.5f, transform.position.z);
 
-        if(Target != null){
-        transform.position = Vector2.MoveTowards(transform.position,
-                                                Target.position,
+        if(target != Vector3.zero){
+            transform.position = Vector2.MoveTowards(transform.position,
+                                                target,
                                                 speed * Time.deltaTime);
+
+            if(Vector3.Distance(transform.position, target) < 0.4f){
+                target = Vector3.zero;
+            }
         }
     }
 
-    private void Move1(){
+    public Vector3 GetPositionPoint(string s){
 
-        Target = positionsPoint[0];
-        Invoke("Move2", 2f);
+        Dictionary<string, Vector3> positions = new Dictionary<string, Vector3>();
 
-    }
-    private void Move2()
-    {
+        foreach (GameObject positionPoint in positionsPoint)
+        {
+            positions[positionPoint.name] = positionPoint.transform.position;
+        }
 
-        Target = positionsPoint[1];
-        Invoke("Move3", 2f);
-    }
-    private void Move3()
-    {
-
-        Target = positionsPoint[2];
-        Invoke("Move4", 2f);
-    }
-    private void Move4()
-    {
-
-        Target = positionsPoint[3];
-        Invoke("Move1", 2f);
+        return positions[s];
     }
 
-    private void Death(){
+    public void SetTarget(Vector3 position){
+        target = position;
+    }
+
+
+    protected IEnumerator LoopShoot(float speed, string direction){
+        Dictionary<string, Vector3> dir = new Dictionary<string, Vector3>();
+        dir["up"] = Vector3.up;
+        dir["down"] = Vector3.down;
+        dir["left"] = Vector3.left;
+        dir["right"] = Vector3.right;
+
+        if (!dir.Keys.Contains(direction)){
+            Debug.Log("Erro LoopShoot: Direction Error");
+            yield break;
+        }
+
+
+        while(true){
+            yield return new WaitForSeconds(speed);
+            generateBulletBoss.Shoot();
+        }
+    }
+
+
+
+    private void CheckDeath(){
         if (gc.GetBossLife() <= 0 || gc.GetPlayerLife() <= 0)
         {
             Destroy(this.gameObject);

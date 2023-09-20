@@ -7,6 +7,7 @@ public class MobileButtonShoot : MonoBehaviour
     private bool fireTouch = false;
 
     public static MobileButtonShoot mbs;
+    
     private void Awake() {
         if (mbs == null)
         {
