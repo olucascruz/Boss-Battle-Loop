@@ -9,6 +9,7 @@ TagManager:
   - EnemyBullet
   - Boss
   - Ponte
+  - EnemyBulletIce
   layers:
   - Default
   - TransparentFX

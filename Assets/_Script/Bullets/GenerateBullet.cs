@@ -39,7 +39,10 @@ public class GenerateBullet : MonoBehaviour
 
     private void Shoot()
     {
-        Instantiate(Bullet, transform.position, transform.rotation);
+        GameObject bullet = Instantiate(Bullet, transform.position, transform.rotation);
+        float speed = bullet.GetComponent<Bullet>().Speed;
+
+        bullet.GetComponent<Rigidbody2D>().velocity = transform.up * speed;
         if(soundManager){
             soundManager.ShootPlayerSoundPlay();
         }else{

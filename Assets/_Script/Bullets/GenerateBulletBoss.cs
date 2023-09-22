@@ -4,21 +4,26 @@ using UnityEngine;
 
 public class GenerateBulletBoss : MonoBehaviour
 {
-    [SerializeField]
-    private GameObject Bullet;
-
+    [SerializeField] private GameObject Bullet;
+    private float angleBullet = 0f;
     public void Shoot(Vector3? direction = null ,Transform target = null)
     {
 
-       GameObject bullet = Instantiate(Bullet, transform.position, transform.rotation);
+        GameObject bullet = Instantiate(Bullet, transform.position, transform.rotation);
+        Vector3 velocity = Vector3.zero;
 
-        if(target == null) return;
-        if(direction == null) return;
+        if(direction != null){
+            velocity = (Vector3) direction * bullet.GetComponent<Bullet>().Speed;
+            velocity.y += angleBullet;
+        }
 
-        Vector3 target_direction = (target.position - transform.position).normalized;
-        Vector3 velocity = target_direction * bullet.GetComponent<Bullet>().Speed;
+        if(target != null){
+            Vector3 targetDirection = (target.position - transform.position).normalized;
+            velocity = targetDirection * (bullet.GetComponent<Bullet>().Speed * 0.5f);
+        }
+
         bullet.GetComponent<Rigidbody2D>().velocity = velocity;
 
-
     }
+
 }

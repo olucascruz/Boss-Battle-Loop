@@ -8,17 +8,15 @@ public class Player : MonoBehaviour
     private GameObject[] GeneratorBullet;
 
     [SerializeField]
-    private float MoveSpeed;
+    private float moveSpeed;
 
     private Rigidbody2D rb;
     private Animator anim;
 
     private Vector2 movement;
-
     private string Direction;
-
     private GameController gc;
-
+    private bool isSlow = false;
 
     // Start is called before the first frame update
     void Start()
@@ -60,7 +58,7 @@ public class Player : MonoBehaviour
 
     void FixedUpdate()
     {
-        rb.velocity = new Vector2(movement.x * MoveSpeed, movement.y * MoveSpeed);
+        rb.velocity = new Vector2(movement.x * moveSpeed, movement.y * moveSpeed);
     }
 
     public void MoveMobile(string dir){
@@ -87,9 +85,19 @@ public class Player : MonoBehaviour
                 movement.x = 0f;
                 movement.y = 0f;
                 break;
-
-
         }
+    }
+
+    private IEnumerator SlowEffect(float duration){
+        isSlow = true;
+        float originalMoveSpeed = moveSpeed;
+
+        moveSpeed = moveSpeed / 2f;
+
+        yield return new WaitForSeconds(duration);
+
+        moveSpeed = originalMoveSpeed;
+        isSlow = false;
     }
 
 
@@ -98,7 +106,10 @@ public class Player : MonoBehaviour
         {
             gc.PLayerLoseLife();
         }
-
+        else if (other.gameObject.tag == "EnemyBulletIce")
+        {
+            if(!isSlow) StartCoroutine(SlowEffect(3f));
+        }
     }
 
 

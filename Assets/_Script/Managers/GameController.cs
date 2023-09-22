@@ -7,7 +7,7 @@ public class GameController : MonoBehaviour
 {
     public static GameController gc;
     private int qntBullet = 0;
-    private float BossLife = 100f;
+    [SerializeField] private float BossLife = 100f;
     private float PlayerLife = 100f;
 
 
@@ -39,7 +39,7 @@ public class GameController : MonoBehaviour
     [SerializeField]
     private GameObject ButtonsTouch;
 
-
+    private float originalBossLife;
     void Awake()
     {
         if (gc == null)
@@ -59,7 +59,7 @@ public class GameController : MonoBehaviour
         {
             ButtonsTouch.SetActive(true);
         }
-
+        originalBossLife = BossLife;
     }
 
     // Update is called once per frame
@@ -83,7 +83,7 @@ public class GameController : MonoBehaviour
     {
         qntBulletText.text = $"Bullets: {qntBullet}";
         BossLifeText.text = $"{BossLife}%";
-        BossLifeImage.fillAmount = BossLife / 100f;
+        BossLifeImage.fillAmount = BossLife / originalBossLife;
         PlayerLifeImage.fillAmount = PlayerLife / 100f;
 
     }

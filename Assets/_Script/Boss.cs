@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Boss : MonoBehaviour
+public abstract class Boss : MonoBehaviour
 {
-    private GameController gc;
+    [SerializeField] private GameController gameController;
 
     private GameObject BossLifeSpace;
 
@@ -15,15 +15,27 @@ public class Boss : MonoBehaviour
     private Vector3 target = Vector3.zero;
 
     [SerializeField] GenerateBulletBoss generateBulletBoss;
-    void Start()
-    {
-        gc = GameController.gc;
-        BossLifeSpace = gc.GetBossLifeSpace();
+
+
+    protected Vector3 leftUp;
+    protected Vector3 rightUp;
+    protected Vector3 leftDown;
+    protected Vector3 rightDown;
+
+    private List<Vector3> listTarget = new List<Vector3>();
+
+    void Start(){
+        leftUp = GetPositionPoint("LeftUp");
+        rightUp = GetPositionPoint("RightUp");
+        leftDown = GetPositionPoint("RightDown");
+        rightDown = GetPositionPoint("RightDown");
+        StartCoroutine(Behavior());
     }
 
+    protected abstract IEnumerator Behavior();
 
     void FixedUpdate(){
-         BossLifeSpace.transform.position = new Vector3(transform.position.x, transform.position.y+0.5f, transform.position.z);
+         gameController.GetBossLifeSpace().transform.position = new Vector3(transform.position.x, transform.position.y+0.5f, transform.position.z);
 
         if(target != Vector3.zero){
             transform.position = Vector2.MoveTowards(transform.position,
@@ -32,11 +44,15 @@ public class Boss : MonoBehaviour
 
             if(Vector3.Distance(transform.position, target) < 0.4f){
                 target = Vector3.zero;
+                if(listTarget.Count >= 1){
+                    target = listTarget[0];
+                    listTarget.RemoveAt(listTarget.Count - 1);
+                }
             }
         }
     }
 
-    public Vector3 GetPositionPoint(string s){
+    protected Vector3 GetPositionPoint(string s){
 
         Dictionary<string, Vector3> positions = new Dictionary<string, Vector3>();
 
@@ -48,34 +64,64 @@ public class Boss : MonoBehaviour
         return positions[s];
     }
 
-    public void SetTarget(Vector3 position){
-        target = position;
+    protected void SetTargetToMove(Vector3 position){
+        listTarget.Add(position);
+        if(listTarget.Count == 1){
+            target = listTarget[0];
+        }
     }
 
+    protected IEnumerator LoopShootWithTarget(float speed, string myTarget){
 
+        GameObject gbTarget = GameObject.FindWithTag(myTarget);
+        while(true){
+                yield return new WaitForSeconds(speed);
+                Vector3 vectorTarget = gbTarget.transform.position;
+                generateBulletBoss.Shoot(target=vectorTarget);
+            }
+    }
     protected IEnumerator LoopShoot(float speed, string direction){
         Dictionary<string, Vector3> dir = new Dictionary<string, Vector3>();
         dir["up"] = Vector3.up;
         dir["down"] = Vector3.down;
         dir["left"] = Vector3.left;
         dir["right"] = Vector3.right;
+        dir["all"] = Vector3.zero;
+        dir["diagonal"] = Vector3.zero;
 
-        if (!dir.Keys.Contains(direction)){
+        if (!dir.ContainsKey(direction)){
             Debug.Log("Erro LoopShoot: Direction Error");
             yield break;
         }
 
 
-        while(true){
-            yield return new WaitForSeconds(speed);
-            generateBulletBoss.Shoot();
+        if(direction == "all"){
+            while(true){
+                yield return new WaitForSeconds(speed);
+
+
+                generateBulletBoss.Shoot(dir["up"]);
+                generateBulletBoss.Shoot(dir["down"]);
+                generateBulletBoss.Shoot(dir["left"]);
+                generateBulletBoss.Shoot(dir["right"]);
+            }
+        }else if(direction == "diagonal"){
+            while(true){
+                generateBulletBoss.Shoot(dir["up"] + dir["left"]);
+                generateBulletBoss.Shoot(dir["up"] + dir["right"]);
+                generateBulletBoss.Shoot(dir["down"] + dir["left"]);
+                generateBulletBoss.Shoot(dir["down"] + dir["right"]);
+            }
+        }else{
+            while(true){
+                yield return new WaitForSeconds(speed);
+                generateBulletBoss.Shoot(dir[direction]);
+            }
         }
     }
 
-
-
-    private void CheckDeath(){
-        if (gc.GetBossLife() <= 0 || gc.GetPlayerLife() <= 0)
+    protected void CheckDeath(){
+        if (gameController.GetBossLife() <= 0 || gameController.GetPlayerLife() <= 0)
         {
             Destroy(this.gameObject);
         }
@@ -85,7 +131,8 @@ public class Boss : MonoBehaviour
     {
         if (collision.gameObject.tag == "Bullet")
         {
-            gc.BossLoseLife();
+            gameController.BossLoseLife();
+            CheckDeath();
             Destroy(collision.gameObject);
         }
     }
