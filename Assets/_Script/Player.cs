@@ -17,6 +17,7 @@ public class Player : MonoBehaviour
     private string Direction;
     private GameController gc;
     private bool isSlow = false;
+    private bool isInIceDamageDelay = false;
 
     // Start is called before the first frame update
     void Start()
@@ -108,8 +109,21 @@ public class Player : MonoBehaviour
         }
         else if (other.gameObject.tag == "EnemyBulletIce")
         {
-            if(!isSlow) StartCoroutine(SlowEffect(3f));
+            if(!isSlow) StartCoroutine(SlowEffect(4f));
         }
+        else if (other.gameObject.tag == "IceSpike"){
+
+            if(!isInIceDamageDelay){
+                StartCoroutine(DelayIceDamage(3f));
+                gc.PLayerLoseLife();
+            }
+        }
+    }
+
+    private IEnumerator DelayIceDamage(float duration){
+        isInIceDamageDelay = true;
+        yield return new WaitForSeconds(duration);
+        isInIceDamageDelay = false;
     }
 
 

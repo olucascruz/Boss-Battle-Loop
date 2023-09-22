@@ -2267,7 +2267,7 @@ MonoBehaviour:
   - {fileID: 1484358158}
   - {fileID: 1151380274}
   - {fileID: 1706992577}
-  MoveSpeed: 2
+  moveSpeed: 3
 --- !u!95 &549661750
 Animator:
   serializedVersion: 4
@@ -4082,8 +4082,9 @@ MonoBehaviour:
   - {fileID: 1700481884}
   - {fileID: 620114238}
   - {fileID: 1628691235}
-  speed: 0
-  generateBulletBoss: {fileID: 0}
+  speed: 0.1
+  generateBulletBoss: {fileID: 160265149}
+  iceSpike: {fileID: 94213882162583475, guid: 76e694bdf473a9147a427f3f84701a98, type: 3}
 --- !u!1 &1418853044
 GameObject:
   m_ObjectHideFlags: 0
@@ -5019,7 +5020,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a8c58f95f728d4438da5345521cffd4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BossLife: 100
+  BossLife: 300
   qntBulletText: {fileID: 1543510755}
   BossLifeText: {fileID: 949016746}
   BossLifeObject: {fileID: 949016744}
