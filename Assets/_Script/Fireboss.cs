@@ -7,19 +7,10 @@ public class Fireboss : Boss
 
 
 
-    private void Start(){
-
-        StartCoroutine(Behavior());
-    }
-
-    private void Update(){
-
-    }
-
     protected override IEnumerator Behavior(){
         IEnumerator loopAll = LoopShoot(0.5f, "all");
         IEnumerator loopDiagonal = LoopShoot(0.5f, "diagonal");
-        IEnumerator loopWithTarget = LoopShootWithTarget(1f, "Player");
+        IEnumerator loopWithTarget = LoopShootWithTargetPlayer(2f);
 
         while(true){
             SetTargetToMove(leftUp);

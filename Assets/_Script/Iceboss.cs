@@ -6,11 +6,13 @@ public class Iceboss : Boss
 {
 
     [SerializeField] private GameObject iceSpike;
+    [SerializeField] private float attackIceSpikeDelay;
+
 
 
     protected override IEnumerator Behavior(){
         GameObject player = GameObject.FindWithTag("Player");
-        IEnumerator loopWithTarget = LoopShootWithTarget(1f, "Player");
+        IEnumerator loopWithTarget = LoopShootWithTargetPlayer(2f);
         while(true){
             SetTargetToMove(leftUp);
             yield return new WaitForSeconds(2f);
@@ -40,7 +42,7 @@ public class Iceboss : Boss
     }
 
     private IEnumerator AttackIceSpike(Vector3 playerPosition){
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(attackIceSpikeDelay);
         GameObject spike = Instantiate(iceSpike, playerPosition, Quaternion.identity);
         Destroy(spike, 3f);
 

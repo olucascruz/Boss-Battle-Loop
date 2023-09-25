@@ -48,7 +48,6 @@ public class Player : MonoBehaviour
         }
         else if(movement.y < 0){
             Direction = "Down";
-
         }
         else if (movement.y > 0 && movement.x == 0){
             Direction = "Up";

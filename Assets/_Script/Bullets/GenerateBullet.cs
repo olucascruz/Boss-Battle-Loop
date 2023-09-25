@@ -4,9 +4,7 @@ using UnityEngine;
 
 public class GenerateBullet : MonoBehaviour
 {
-    [SerializeField]
-    private GameObject Bullet;
-
+    [SerializeField] private GameObject Bullet;
     private GameController gc;
     private MobileButtonShoot mbs;
     private SoundManager soundManager;

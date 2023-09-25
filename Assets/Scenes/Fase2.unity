@@ -2240,7 +2240,7 @@ Transform:
   m_GameObject: {fileID: 549661744}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.056901574, y: -4.78, z: 0}
-  m_LocalScale: {x: 2, y: 1.5, z: 1}
+  m_LocalScale: {x: 3, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1771070666}
@@ -3923,7 +3923,7 @@ GameObject:
   - component: {fileID: 1362648723}
   - component: {fileID: 1362648725}
   m_Layer: 0
-  m_Name: Boss
+  m_Name: Bossice
   m_TagString: Boss
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4010,7 +4010,7 @@ Transform:
   m_GameObject: {fileID: 1362648719}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 160265148}
@@ -4030,7 +4030,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0055366755, y: -0.04}
+  m_Offset: {x: 0.009148747, y: -0.07671356}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -4041,7 +4041,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.8535788, y: 0.93559945}
+  m_Size: {x: 0.75078076, y: 0.81811607}
   m_EdgeRadius: 0
 --- !u!50 &1362648724
 Rigidbody2D:
@@ -4082,9 +4082,10 @@ MonoBehaviour:
   - {fileID: 1700481884}
   - {fileID: 620114238}
   - {fileID: 1628691235}
-  speed: 0.1
+  speed: 2
   generateBulletBoss: {fileID: 160265149}
   iceSpike: {fileID: 94213882162583475, guid: 76e694bdf473a9147a427f3f84701a98, type: 3}
+  attackIceSpikeDelay: 0.5
 --- !u!1 &1418853044
 GameObject:
   m_ObjectHideFlags: 0

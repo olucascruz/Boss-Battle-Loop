@@ -60,13 +60,13 @@ public class GameController : MonoBehaviour
             ButtonsTouch.SetActive(true);
         }
         originalBossLife = BossLife;
+        RefreshScreen();
+
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        RefreshScreen();
-
         if (BossLife <= 0)
         {
             BossLifeObject.SetActive(false);
@@ -91,6 +91,7 @@ public class GameController : MonoBehaviour
     public void AddBullet()
     {
         qntBullet++;
+        RefreshScreen();
     }
 
     public bool UseBullet()
@@ -98,6 +99,7 @@ public class GameController : MonoBehaviour
         if (qntBullet > 0)
         {
             qntBullet--;
+            RefreshScreen();
             return true;
         }
         else
@@ -110,10 +112,12 @@ public class GameController : MonoBehaviour
     public void BossLoseLife()
     {
         BossLife = BossLife - 10;
+        RefreshScreen();
     }
     public void PLayerLoseLife()
     {
         PlayerLife = PlayerLife - 33.4f;
+        RefreshScreen();
     }
 
     public float GetBossLife()

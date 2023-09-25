@@ -23,12 +23,21 @@ public abstract class Boss : MonoBehaviour
     protected Vector3 rightDown;
 
     private List<Vector3> listTarget = new List<Vector3>();
+    private Dictionary<string, Vector3> dir = new Dictionary<string, Vector3>();
+    private GameObject playerTarget;
 
     void Start(){
+        dir["up"] = Vector3.up;
+        dir["down"] = Vector3.down;
+        dir["left"] = Vector3.left;
+        dir["right"] = Vector3.right;
+        dir["all"] = Vector3.zero;
+        dir["diagonal"] = Vector3.zero;
         leftUp = GetPositionPoint("LeftUp");
         rightUp = GetPositionPoint("RightUp");
         leftDown = GetPositionPoint("RightDown");
         rightDown = GetPositionPoint("RightDown");
+        playerTarget = GameObject.FindWithTag("Player");
         StartCoroutine(Behavior());
     }
 
@@ -65,29 +74,25 @@ public abstract class Boss : MonoBehaviour
     }
 
     protected void SetTargetToMove(Vector3 position){
-        listTarget.Add(position);
+        if (listTarget.Count < 10){
+            listTarget.Add(position);
+        }
         if(listTarget.Count == 1){
             target = listTarget[0];
         }
     }
 
-    protected IEnumerator LoopShootWithTarget(float speed, string myTarget){
-
-        GameObject gbTarget = GameObject.FindWithTag(myTarget);
+    protected IEnumerator LoopShootWithTargetPlayer(float speed){
         while(true){
-                yield return new WaitForSeconds(speed);
-                Vector3 vectorTarget = gbTarget.transform.position;
-                generateBulletBoss.Shoot(target=vectorTarget);
-            }
+            yield return new WaitForSeconds(speed);
+            Vector3 vectorTarget = playerTarget.transform.position;
+            generateBulletBoss.Shoot(target=vectorTarget);
+        }
     }
+
+
+
     protected IEnumerator LoopShoot(float speed, string direction){
-        Dictionary<string, Vector3> dir = new Dictionary<string, Vector3>();
-        dir["up"] = Vector3.up;
-        dir["down"] = Vector3.down;
-        dir["left"] = Vector3.left;
-        dir["right"] = Vector3.right;
-        dir["all"] = Vector3.zero;
-        dir["diagonal"] = Vector3.zero;
 
         if (!dir.ContainsKey(direction)){
             Debug.Log("Erro LoopShoot: Direction Error");
@@ -98,7 +103,6 @@ public abstract class Boss : MonoBehaviour
         if(direction == "all"){
             while(true){
                 yield return new WaitForSeconds(speed);
-
 
                 generateBulletBoss.Shoot(dir["up"]);
                 generateBulletBoss.Shoot(dir["down"]);

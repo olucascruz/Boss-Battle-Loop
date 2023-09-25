@@ -456,8 +456,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Bullet: {fileID: 8611101179307312369, guid: c3a8b1aa676590244823da07ca6c921c, type: 3}
-  SpeedShoot: 0.3
-  ShootSound: {fileID: 1567901431}
 --- !u!114 &154093768
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1841,7 +1839,7 @@ Transform:
   m_GameObject: {fileID: 549661744}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.056901574, y: -4.78, z: 0}
-  m_LocalScale: {x: 2, y: 1.5, z: 1}
+  m_LocalScale: {x: 3, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1771070666}
@@ -1869,7 +1867,7 @@ MonoBehaviour:
   - {fileID: 1484358158}
   - {fileID: 1151380274}
   - {fileID: 1706992577}
-  MoveSpeed: 2
+  moveSpeed: 0
 --- !u!95 &549661750
 Animator:
   serializedVersion: 4
@@ -2496,8 +2494,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Bullet: {fileID: 8611101179307312369, guid: c3a8b1aa676590244823da07ca6c921c, type: 3}
-  SpeedShoot: 0.3
-  ShootSound: {fileID: 1567901431}
 --- !u!114 &833323079
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2898,8 +2894,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Bullet: {fileID: 8611101179307312369, guid: c3a8b1aa676590244823da07ca6c921c, type: 3}
-  SpeedShoot: 0.3
-  ShootSound: {fileID: 1567901431}
 --- !u!114 &1014790367
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3127,7 +3121,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Bullet: {fileID: 7303198093933516084, guid: 9758fc401936f7a4b9453056b54c8afa, type: 3}
-  ShootSound: {fileID: 1447906527}
 --- !u!1 &1241860974
 GameObject:
   m_ObjectHideFlags: 0
@@ -3608,8 +3601,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1362648719}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.09, y: -0.127, z: 0}
-  m_LocalScale: {x: 1.4, y: 1.4, z: 1}
+  m_LocalPosition: {x: 0.23, y: -0.127, z: 0}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 833323077}
@@ -3637,7 +3630,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0055366755, y: 0.04}
+  m_Offset: {x: -0.07414043, y: -0.03330815}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -3648,7 +3641,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.45, y: 0.57}
+  m_Size: {x: 0.31279248, y: 0.552406}
   m_EdgeRadius: 0
 --- !u!50 &1362648724
 Rigidbody2D:
@@ -4155,7 +4148,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Bullet: {fileID: 7303198093933516084, guid: 9758fc401936f7a4b9453056b54c8afa, type: 3}
-  ShootSound: {fileID: 1447906527}
 --- !u!1 &1501229833
 GameObject:
   m_ObjectHideFlags: 0
@@ -4827,8 +4819,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Bullet: {fileID: 8611101179307312369, guid: c3a8b1aa676590244823da07ca6c921c, type: 3}
-  SpeedShoot: 0.3
-  ShootSound: {fileID: 1567901431}
 --- !u!114 &1677372580
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5058,7 +5048,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Bullet: {fileID: 7303198093933516084, guid: 9758fc401936f7a4b9453056b54c8afa, type: 3}
-  ShootSound: {fileID: 1447906527}
 --- !u!1 &1721574809
 GameObject:
   m_ObjectHideFlags: 0
@@ -5127,6 +5116,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a8c58f95f728d4438da5345521cffd4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  BossLife: 100
   qntBulletText: {fileID: 1543510755}
   BossLifeText: {fileID: 949016746}
   BossLifeObject: {fileID: 949016744}
@@ -5197,7 +5187,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Bullet: {fileID: 7303198093933516084, guid: 9758fc401936f7a4b9453056b54c8afa, type: 3}
-  ShootSound: {fileID: 1447906527}
 --- !u!4 &1791880242 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6517600039961391004, guid: 3f07d69beaf8d4e49b134dc5b8a733e1, type: 3}
