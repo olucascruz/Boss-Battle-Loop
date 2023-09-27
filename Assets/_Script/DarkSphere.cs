@@ -15,14 +15,14 @@ public class DarkSphere : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         generateBulletBoss = GetComponent<GenerateBulletBoss>();
         StartCoroutine(DarkShoot());
-        Destroy(gameObject, 5f);
+        Destroy(gameObject, 6f);
     }
 
 
 
     private IEnumerator DarkShoot(){
         while(true){
-            yield return new WaitForSeconds(.50f);
+            yield return new WaitForSeconds(1.5f);
             generateBulletBoss.Shoot(Vector3.up);
             generateBulletBoss.Shoot(Vector3.down);
             generateBulletBoss.Shoot(Vector3.left);

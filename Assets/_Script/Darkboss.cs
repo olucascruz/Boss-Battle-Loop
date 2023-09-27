@@ -37,6 +37,7 @@ public class Darkboss : Boss
         IEnumerator loopAll = LoopShoot(0.5f, "all");
         IEnumerator loopDiagonal = LoopShoot(0.5f, "diagonal");
         IEnumerator loopWithTarget = LoopShootWithTargetPlayer(2f);
+        int numCircle =  1;
         while(true){
             yield return new WaitForSeconds(5f);
             StartCoroutine(loopWithTarget);
@@ -47,8 +48,9 @@ public class Darkboss : Boss
             SetTargetToMove(leftUp);
             SetTargetToMove(leftDown);
             yield return new WaitForSeconds(5f);
+            numCircle = (numCircle == 1) ? 2 : 1;
             StopCoroutine(loopWithTarget);
-            GenerateDarkSphere(2);
+            GenerateDarkSphere(numCircle);
 
 
 
