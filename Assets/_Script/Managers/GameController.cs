@@ -81,17 +81,19 @@ public class GameController : MonoBehaviour
     }
     public void RefreshScreen()
     {
-        qntBulletText.text = $"Bullets: {qntBullet}";
+        qntBulletText.text = $"Bullets: {qntBullet}/6";
         BossLifeText.text = $"{BossLife}%";
         BossLifeImage.fillAmount = BossLife / originalBossLife;
         PlayerLifeImage.fillAmount = PlayerLife / 100f;
 
     }
 
-    public void AddBullet()
+    public bool AddBullet()
     {
+        if (qntBullet == 6) return false;
         qntBullet++;
         RefreshScreen();
+        return true;
     }
 
     public bool UseBullet()

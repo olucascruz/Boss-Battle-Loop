@@ -16,9 +16,10 @@ public class Bullet_coletavel : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            gameObject.SetActive(false);
-            gc.AddBullet();
-            Invoke("ReturnBullet", 5f);
+            if(gc.AddBullet()){
+                gameObject.SetActive(false);
+                Invoke("ReturnBullet", 5f);
+            }
         }
     }
 
