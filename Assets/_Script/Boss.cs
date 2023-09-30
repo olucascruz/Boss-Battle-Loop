@@ -51,11 +51,11 @@ public abstract class Boss : MonoBehaviour
                                                 target,
                                                 speed * Time.deltaTime);
 
-            if(Vector3.Distance(transform.position, target) < 0.01f){
+            if(Vector3.Distance(transform.position, target) < 0.3f){
                 target = Vector3.zero;
+                listTarget.RemoveAt(0);
                 if(listTarget.Count >= 1){
                     target = listTarget[0];
-                    listTarget.RemoveAt(listTarget.Count - 1);
                 }
             }
         }
