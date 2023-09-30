@@ -6,8 +6,6 @@ public class SoundManager : MonoBehaviour
 {
 
     [SerializeField] private AudioSource ShootPlayerSound;
-    [SerializeField] private AudioSource ShootBossFireSound;
-
     private static SoundManager instance;
     public static SoundManager Instance
     {
@@ -19,7 +17,6 @@ public class SoundManager : MonoBehaviour
     {
         if(instance == null){
             instance = this;
-            DontDestroyOnLoad(gameObject);
         }else if (instance != this){
             Destroy(gameObject);
         }
@@ -29,8 +26,8 @@ public class SoundManager : MonoBehaviour
     public void ShootPlayerSoundPlay(){
         ShootPlayerSound.Play();
     }
-    public void ShootBossFireSoundPlay(){
-        ShootBossFireSound.Play();
+    public void AttackBossSoundPlay(AudioSource audio){
+        audio.Play();
     }
 
 
