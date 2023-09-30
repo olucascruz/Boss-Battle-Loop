@@ -51,7 +51,7 @@ public abstract class Boss : MonoBehaviour
                                                 target,
                                                 speed * Time.deltaTime);
 
-            if(Vector3.Distance(transform.position, target) < 0.4f){
+            if(Vector3.Distance(transform.position, target) < 0.01f){
                 target = Vector3.zero;
                 if(listTarget.Count >= 1){
                     target = listTarget[0];
