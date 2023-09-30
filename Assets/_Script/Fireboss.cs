@@ -16,12 +16,20 @@ public class Fireboss : Boss
             SetTargetToMove(rightUp);
             yield return new WaitForSeconds(4f);
             StartCoroutine(loopAll);
+            SetTargetToMove(leftUp);
+            SetTargetToMove(leftDown);
+            SetTargetToMove(rightDown);
+            SetTargetToMove(rightUp);
             yield return new WaitForSeconds(6f);
             StopCoroutine(loopAll);
             yield return new WaitForSeconds(2f);
             SetTargetToMove(leftUp);
 
             StartCoroutine(loopWithTarget);
+            StartCoroutine(loopAll);
+            SetTargetToMove(leftUp);
+            SetTargetToMove(leftDown);
+            SetTargetToMove(rightDown);
             yield return new WaitForSeconds(6f);
             SetTargetToMove(rightUp);
             StopCoroutine(loopWithTarget);
