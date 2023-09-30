@@ -58,7 +58,8 @@ public class Player : MonoBehaviour
 
     void FixedUpdate()
     {
-        rb.velocity = new Vector2(movement.x * moveSpeed, movement.y * moveSpeed);
+        Vector2 movementDirection = new Vector2(movement.x, movement.y).normalized;
+        rb.velocity = movementDirection * moveSpeed;
     }
 
     public void MoveMobile(string dir){
