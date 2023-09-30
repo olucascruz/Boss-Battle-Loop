@@ -34,8 +34,6 @@ public class Darkboss : Boss
     }
 
     protected override IEnumerator Behavior(){
-        IEnumerator loopAll = LoopShoot(0.5f, "all");
-        IEnumerator loopDiagonal = LoopShoot(0.5f, "diagonal");
         IEnumerator loopWithTarget = LoopShootWithTargetPlayer(2f);
         int numCircle =  1;
         while(true){

@@ -4,44 +4,36 @@ using UnityEngine;
 
 public class Fireboss : Boss
 {
-
-
-
     protected override IEnumerator Behavior(){
-        IEnumerator loopAll = LoopShoot(0.5f, "all");
-        IEnumerator loopDiagonal = LoopShoot(0.5f, "diagonal");
-        IEnumerator loopWithTarget = LoopShootWithTargetPlayer(2f);
+        IEnumerator loopAll = LoopShoot(1f, "all");
+        IEnumerator loopDiagonal = LoopShoot(1f, "diagonal");
+        IEnumerator loopWithTarget = LoopShootWithTargetPlayer(1f);
 
         while(true){
             SetTargetToMove(leftUp);
-            yield return new WaitForSeconds(2f);
-
-            // Loop Shoot
-            StartCoroutine(loopAll);
             SetTargetToMove(leftDown);
-            yield return new WaitForSeconds(2f);
-            SetTargetToMove(rightUp);
-            yield return new WaitForSeconds(6f);
-            SetTargetToMove(leftDown);
-            StopCoroutine(loopAll);
-
-
-
-            yield return new WaitForSeconds(3f);
             SetTargetToMove(rightDown);
-
-            // Loop Shoot with Target
-            StartCoroutine(loopWithTarget);
-            yield return new WaitForSeconds(5f);
-            StopCoroutine(loopWithTarget);
             SetTargetToMove(rightUp);
+            yield return new WaitForSeconds(4f);
+            StartCoroutine(loopAll);
+            yield return new WaitForSeconds(6f);
+            StopCoroutine(loopAll);
             yield return new WaitForSeconds(2f);
+            SetTargetToMove(leftUp);
 
+            StartCoroutine(loopWithTarget);
+            yield return new WaitForSeconds(6f);
+            SetTargetToMove(rightUp);
+            StopCoroutine(loopWithTarget);
 
+            yield return new WaitForSeconds(2f);
             StartCoroutine(loopDiagonal);
-            yield return new WaitForSeconds(5f);
+            yield return new WaitForSeconds(4f);
             StopCoroutine(loopDiagonal);
 
+
+
         }
+
     }
 }

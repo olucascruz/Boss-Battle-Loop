@@ -85,8 +85,8 @@ public abstract class Boss : MonoBehaviour
     protected IEnumerator LoopShootWithTargetPlayer(float speed){
         while(true){
             yield return new WaitForSeconds(speed);
-            Vector3 vectorTarget = playerTarget.transform.position;
-            generateBulletBoss.Shoot(target=vectorTarget);
+            Transform vectorTarget = playerTarget.transform;
+            generateBulletBoss.Shoot(null, vectorTarget);
         }
     }
 
@@ -111,10 +111,11 @@ public abstract class Boss : MonoBehaviour
             }
         }else if(direction == "diagonal"){
             while(true){
-                generateBulletBoss.Shoot(dir["up"] + dir["left"]);
-                generateBulletBoss.Shoot(dir["up"] + dir["right"]);
-                generateBulletBoss.Shoot(dir["down"] + dir["left"]);
-                generateBulletBoss.Shoot(dir["down"] + dir["right"]);
+                yield return new WaitForSeconds(speed);
+                generateBulletBoss.Shoot((dir["up"] + dir["left"]).normalized);
+                generateBulletBoss.Shoot((dir["up"] + dir["right"]).normalized);
+                generateBulletBoss.Shoot((dir["down"] + dir["left"]).normalized);
+                generateBulletBoss.Shoot((dir["down"] + dir["right"]).normalized);
             }
         }else{
             while(true){

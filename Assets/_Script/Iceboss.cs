@@ -45,6 +45,5 @@ public class Iceboss : Boss
         yield return new WaitForSeconds(attackIceSpikeDelay);
         GameObject spike = Instantiate(iceSpike, playerPosition, Quaternion.identity);
         Destroy(spike, 3f);
-
     }
 }
