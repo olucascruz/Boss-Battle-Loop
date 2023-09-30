@@ -81,9 +81,9 @@ public class GameController : MonoBehaviour
     }
     public void RefreshScreen()
     {
-        qntBulletText.text = $"Bullets: {qntBullet}/6";
-        BossLifeText.text = $"{BossLife}%";
-        BossLifeImage.fillAmount = BossLife / originalBossLife;
+        if(qntBulletText) qntBulletText.text = $"Bullets: {qntBullet}/6";
+        if(BossLifeText) BossLifeText.text = $"{BossLife}%";
+        if(BossLifeImage) BossLifeImage.fillAmount = BossLife / originalBossLife;
         PlayerLifeImage.fillAmount = PlayerLife / 100f;
 
     }

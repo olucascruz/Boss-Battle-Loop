@@ -37,7 +37,13 @@ public class Darkboss : Boss
         IEnumerator loopWithTarget = LoopShootWithTargetPlayer(2f);
         int numCircle =  1;
         while(true){
-            yield return new WaitForSeconds(5f);
+            SetTargetToMove(leftUp);
+            SetTargetToMove(leftDown);
+            SetTargetToMove(rightUp);
+            SetTargetToMove(rightDown);
+            SetTargetToMove(leftUp);
+            SetTargetToMove(leftDown);
+            yield return new WaitForSeconds(6f);
             StartCoroutine(loopWithTarget);
             SetTargetToMove(leftUp);
             SetTargetToMove(leftDown);

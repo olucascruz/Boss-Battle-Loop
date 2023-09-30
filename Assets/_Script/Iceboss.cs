@@ -7,7 +7,7 @@ public class Iceboss : Boss
 
     [SerializeField] private GameObject iceSpike;
     [SerializeField] private float attackIceSpikeDelay;
-
+    [SerializeField] private AudioSource attackIceSpikeAudio;
 
 
     protected override IEnumerator Behavior(){
@@ -23,9 +23,13 @@ public class Iceboss : Boss
             StartCoroutine(AttackIceSpike(player.transform.position));
             yield return new WaitForSeconds(2f);
             SetTargetToMove(rightUp);
+
             StartCoroutine(AttackIceSpike(player.transform.position));
             StartCoroutine(AttackIceSpike(player.transform.position));
             StartCoroutine(AttackIceSpike(player.transform.position));
+            StartCoroutine(AttackIceSpike(player.transform.position));
+            StartCoroutine(AttackIceSpike(player.transform.position));
+
 
 
             SetTargetToMove(leftUp);
@@ -42,7 +46,13 @@ public class Iceboss : Boss
     }
 
     private IEnumerator AttackIceSpike(Vector3 playerPosition){
+        SoundManager soundManager= SoundManager.Instance;
         yield return new WaitForSeconds(attackIceSpikeDelay);
+        if(soundManager != null && attackIceSpikeAudio != null){
+            soundManager.AttackBossSoundPlay(attackIceSpikeAudio);
+        }else{
+            print("missing soundManager or audio");
+        }
         GameObject spike = Instantiate(iceSpike, playerPosition, Quaternion.identity);
         Destroy(spike, 3f);
     }
