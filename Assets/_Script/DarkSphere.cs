@@ -23,10 +23,10 @@ public class DarkSphere : MonoBehaviour
     private IEnumerator DarkShoot(){
         while(true){
             yield return new WaitForSeconds(1.5f);
-            generateBulletBoss.Shoot(Vector3.up);
-            generateBulletBoss.Shoot(Vector3.down);
-            generateBulletBoss.Shoot(Vector3.left);
-            generateBulletBoss.Shoot(Vector3.right);
+            generateBulletBoss.Shoot(Vector3.up, null, 1.5f);
+            generateBulletBoss.Shoot(Vector3.down, null, 1.5f);
+            generateBulletBoss.Shoot(Vector3.left, null, 1.5f);
+            generateBulletBoss.Shoot(Vector3.right, null, 1.5f);
         }
     }
 
