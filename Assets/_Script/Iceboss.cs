@@ -15,7 +15,7 @@ public class Iceboss : Boss
         IEnumerator loopWithTarget = LoopShootWithTargetPlayer(2f);
         while(true){
             SetTargetToMove(leftUp);
-            yield return new WaitForSeconds(2f);
+            yield return new WaitForSeconds(4f);
 
             // Loop Shoot
             StartCoroutine(loopWithTarget);
