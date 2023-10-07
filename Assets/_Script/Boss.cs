@@ -26,6 +26,9 @@ public abstract class Boss : MonoBehaviour
     private Dictionary<string, Vector3> dir = new Dictionary<string, Vector3>();
     private GameObject playerTarget;
 
+    private SpriteRenderer spriteRenderer;
+    private Color originalColor;
+
     void Start(){
         dir["up"] = Vector3.up;
         dir["down"] = Vector3.down;
@@ -38,6 +41,8 @@ public abstract class Boss : MonoBehaviour
         leftDown = GetPositionPoint("RightDown");
         rightDown = GetPositionPoint("RightDown");
         playerTarget = GameObject.FindWithTag("Player");
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        originalColor = spriteRenderer.color;
         StartCoroutine(Behavior());
     }
 
@@ -137,10 +142,16 @@ public abstract class Boss : MonoBehaviour
         if (collision.gameObject.tag == "Bullet")
         {
             gameController.BossLoseLife();
+            StartCoroutine(DamageColor());
             CheckDeath();
             Destroy(collision.gameObject);
         }
     }
 
-
+    IEnumerator DamageColor(){
+        Color colorDamage = new Color(0.8f, 0.25f, 0.25f);
+        spriteRenderer.color = colorDamage;
+        yield return new WaitForSeconds(1f);
+        spriteRenderer.color = originalColor;
+    }
 }
