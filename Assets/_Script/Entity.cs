@@ -3,21 +3,26 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using System.Text;
+using UnityEngine.SceneManagement;
 
 public class Entity : MonoBehaviour
 {
-
+    [SerializeField] private GameObject player;
     [SerializeField] private GameObject dialogGameObject;
     [SerializeField] private TextMeshProUGUI dialogText;
     [SerializeField] private string[] dialog;
     private StringBuilder str = new StringBuilder();
     private GameController gameController;
+    [SerializeField] private bool isFinal = false;
 
     void Start()
     {
     gameController = GameController.gc;
     dialogGameObject.SetActive(false);
-
+    player = GameObject.FindWithTag("Player");
+    if(isFinal){
+        gameController.PlayerIsBoss = true;
+    }
     StartCoroutine(Dialog());
 
     }
@@ -40,9 +45,25 @@ public class Entity : MonoBehaviour
         }
 
         yield return new WaitForSeconds(5f);
+
+    }
+
+    void FinalAction(){
         dialogGameObject.SetActive(false);
-        gameController.BossLoseLife();
+        if(!isFinal){
+            gameController.BossLoseLife();
+        }else{
+            if(player){
+                player.transform.position = gameObject.transform.position;
+            }
+            StartCoroutine(ChangeSceneFinal());
+        }
         Destroy(gameObject, 1f);
+    }
+
+    IEnumerator ChangeSceneFinal(){
+        yield return new WaitForSeconds(5f);
+        SceneManager.LoadScene("FinalScene");
     }
 
     // Update is called once per frame
