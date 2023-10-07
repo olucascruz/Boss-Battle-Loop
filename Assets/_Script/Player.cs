@@ -18,12 +18,16 @@ public class Player : MonoBehaviour
     private GameController gc;
     private bool isSlow = false;
     private bool isInIceDamageDelay = false;
+    private SpriteRenderer spriteRenderer;
+    private Color origianlColor;
 
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+        spriteRenderer= GetComponent<SpriteRenderer>();
+        origianlColor = spriteRenderer.color;
         Direction = "Up";
         gc = GameController.gc;
     }
@@ -95,7 +99,11 @@ public class Player : MonoBehaviour
 
         moveSpeed = moveSpeed / 2f;
 
+        Color frozenColor = new Color(0f, 1f, 1f);
+        spriteRenderer.color = frozenColor;
         yield return new WaitForSeconds(duration);
+        spriteRenderer.color = origianlColor;
+
 
         moveSpeed = originalMoveSpeed;
         isSlow = false;
@@ -106,17 +114,28 @@ public class Player : MonoBehaviour
         if (other.gameObject.tag == "EnemyBullet")
         {
             gc.PLayerLoseLife();
+            StartCoroutine(DamageColor());
         }
         else if (other.gameObject.tag == "EnemyBulletIce")
         {
-            if(!isSlow) StartCoroutine(SlowEffect(4f));
+            if(!isSlow) StartCoroutine(SlowEffect(3f));
         }
         else if (other.gameObject.tag == "IceSpike"){
 
             if(!isInIceDamageDelay){
                 StartCoroutine(DelayIceDamage(3f));
                 gc.PLayerLoseLife();
+                StartCoroutine(DamageColor());
             }
+        }
+    }
+
+    private IEnumerator DamageColor(){
+        Color colorDamage =new Color(1f, 0.2f, 0.18f);
+        spriteRenderer.color = colorDamage;
+        yield return new WaitForSeconds(1f);
+        if(!isSlow){
+            spriteRenderer.color = origianlColor;
         }
     }
 
