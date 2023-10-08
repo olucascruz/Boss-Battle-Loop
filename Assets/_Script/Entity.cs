@@ -9,19 +9,27 @@ public class Entity : MonoBehaviour
 {
     [SerializeField] private GameObject player;
     [SerializeField] private GameObject dialogGameObject;
+    [SerializeField] private GameObject changeScene;
+
     [SerializeField] private TextMeshProUGUI dialogText;
     [SerializeField] private string[] dialog;
     private StringBuilder str = new StringBuilder();
     private GameController gameController;
     [SerializeField] private bool isFinal = false;
+    InfoGame infoGame;
 
     void Start()
     {
+    infoGame = InfoGame.Instance;
     gameController = GameController.gc;
     dialogGameObject.SetActive(false);
     player = GameObject.FindWithTag("Player");
-    if(isFinal){
-        gameController.PlayerIsBoss = true;
+    if(infoGame){
+        if(isFinal){
+            infoGame.EndTime();
+        }else{
+            infoGame.StarCountKilled();
+        }
     }
     StartCoroutine(Dialog());
 
@@ -37,34 +45,36 @@ public class Entity : MonoBehaviour
             foreach (char letter in phrase)
             {
                 str.Append(letter.ToString());
-                yield return new WaitForSecondsRealtime(0.15f);
+                yield return new WaitForSecondsRealtime(0.10f);
             }
             yield return new WaitForSeconds(2f);
             str.Clear();
 
         }
 
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(4f);
+        FinalAction();
 
     }
 
     void FinalAction(){
         dialogGameObject.SetActive(false);
         if(!isFinal){
+            infoGame.StartTime();
             gameController.BossLoseLife();
         }else{
             if(player){
+                gameController.PlayerIsBoss = true;
+                gameController.RefreshScreen();
                 player.transform.position = gameObject.transform.position;
             }
-            StartCoroutine(ChangeSceneFinal());
+            if(changeScene){
+                changeScene.GetComponent<ChangeScene>().SceneFinal();
+            }
         }
         Destroy(gameObject, 1f);
     }
 
-    IEnumerator ChangeSceneFinal(){
-        yield return new WaitForSeconds(5f);
-        SceneManager.LoadScene("FinalScene");
-    }
 
     // Update is called once per frame
     void Update()
