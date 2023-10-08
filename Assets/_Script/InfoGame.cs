@@ -37,7 +37,7 @@ public class InfoGame : MonoBehaviour
    }
    public void EndTime()
    {
-    timeGame = timeGame - Time.time;
+    timeGame = Time.time - timeGame;
    }
    public void StarCountKilled()
    {
