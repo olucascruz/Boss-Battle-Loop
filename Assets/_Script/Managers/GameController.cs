@@ -11,34 +11,30 @@ public class GameController : MonoBehaviour
     private float PlayerLife = 100f;
 
 
-    [SerializeField]
-    private Text qntBulletText;
-    [SerializeField]
-    private Text BossLifeText;
-    [SerializeField]
-    private GameObject BossLifeObject;
-    [SerializeField]
-    private Image BossLifeImage;
+    [SerializeField] private Text qntBulletText;
+    [SerializeField] private Text BossLifeText;
+    [SerializeField] private GameObject BossLifeObject;
+    [SerializeField] private Image BossLifeImage;
 
-    [SerializeField]
-    private GameObject BossLifeSpace;
+    [SerializeField] private GameObject BossLifeSpace;
 
-    [SerializeField]
-    private Image PlayerLifeImage;
+    [SerializeField] private Image PlayerLifeImage;
 
-    [SerializeField]
-    private GameObject PlayerLifeSpace;
+    [SerializeField] private GameObject PlayerLifeSpace;
 
 
-    [SerializeField]
-    private GameObject Portal;
+    [SerializeField] private GameObject Portal;
 
-    [SerializeField]
-    private GameObject GameOver;
+    [SerializeField] private GameObject GameOver;
 
-    [SerializeField]
-    private GameObject ButtonsTouch;
+    [SerializeField] private GameObject ButtonsTouch;
 
+    private InfoGame infoGame;
+
+    private bool playerIsBoss = false;
+    public bool PlayerIsBoss{
+        set{playerIsBoss = value;}
+    }
     private float originalBossLife;
     void Awake()
     {
@@ -60,33 +56,25 @@ public class GameController : MonoBehaviour
             ButtonsTouch.SetActive(true);
         }
         originalBossLife = BossLife;
+        infoGame = InfoGame.Instance;
         RefreshScreen();
 
     }
 
-    // Update is called once per frame
-    void FixedUpdate()
-    {
-        if (BossLife <= 0)
-        {
-            BossLifeObject.SetActive(false);
-            BossLifeSpace.SetActive(false);
-            Portal.SetActive(true);
-        }
-
-        if (PlayerLife <= 0)
-        {
-            GameOver.SetActive(true);
-        }
-    }
     public void RefreshScreen()
     {
-        if(qntBulletText) qntBulletText.text = $"Bullets: {qntBullet}/6";
+        if(!playerIsBoss){
+            if(qntBulletText) qntBulletText.text = $"Bullets: {qntBullet}/6";
+        }else{
+            if(qntBulletText) qntBulletText.text = $"Bullets: ∞/∞";
+        }
         if(BossLifeText) BossLifeText.text = $"{BossLife}%";
         if(BossLifeImage) BossLifeImage.fillAmount = BossLife / originalBossLife;
         PlayerLifeImage.fillAmount = PlayerLife / 100f;
 
     }
+
+    
 
     public bool AddBullet()
     {
@@ -98,6 +86,8 @@ public class GameController : MonoBehaviour
 
     public bool UseBullet()
     {
+        if(playerIsBoss) return true;
+
         if (qntBullet > 0)
         {
             qntBullet--;
@@ -115,11 +105,22 @@ public class GameController : MonoBehaviour
     {
         BossLife = BossLife - 10;
         RefreshScreen();
+        if (BossLife <= 0)
+        {
+            if(BossLifeObject) BossLifeObject.SetActive(false);
+            if(BossLifeSpace) BossLifeSpace.SetActive(false);
+            Portal.SetActive(true);
+        }
     }
     public void PLayerLoseLife()
     {
         PlayerLife = PlayerLife - 33.4f;
         RefreshScreen();
+        if (PlayerLife <= 0)
+        {
+            GameOver.SetActive(true);
+            infoGame.AddKilled();
+        }
     }
 
     public float GetBossLife()
