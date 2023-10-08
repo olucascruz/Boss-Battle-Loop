@@ -12,7 +12,7 @@ public class Iceboss : Boss
 
     protected override IEnumerator Behavior(){
         GameObject player = GameObject.FindWithTag("Player");
-        IEnumerator loopWithTarget = LoopShootWithTargetPlayer(2f);
+        IEnumerator loopWithTarget = LoopShootWithTargetPlayer(4f);
         while(true){
             SetTargetToMove(leftUp);
             yield return new WaitForSeconds(4f);

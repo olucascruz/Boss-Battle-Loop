@@ -40,6 +40,7 @@ public class Darkboss : Boss
             SetTargetToMove(leftUp);
             SetTargetToMove(leftDown);
             SetTargetToMove(rightUp);
+            yield return new WaitForSeconds(4f);
             SetTargetToMove(rightDown);
             SetTargetToMove(leftUp);
             SetTargetToMove(leftDown);
