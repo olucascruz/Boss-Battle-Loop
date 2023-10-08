@@ -17,7 +17,7 @@ public class InfoGame : MonoBehaviour
     public static InfoGame Instance{
         get{return instance;}
     }
-    
+
     void Awake()
     {
         if (instance == null)
@@ -31,19 +31,19 @@ public class InfoGame : MonoBehaviour
         }
     }
 
-   void StartTime()
+   public void StartTime()
    {
     timeGame = Time.time;
    }
-   void EndTime()
+   public void EndTime()
    {
     timeGame = timeGame - Time.time;
    }
-   void StarCountKilled()
+   public void StarCountKilled()
    {
     playerKilled = 0;
    }
-   void AddKilled()
+   public void AddKilled()
    {
     playerKilled += 1;
    }
