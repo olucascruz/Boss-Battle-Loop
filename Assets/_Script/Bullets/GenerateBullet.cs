@@ -43,8 +43,6 @@ public class GenerateBullet : MonoBehaviour
         bullet.GetComponent<Rigidbody2D>().velocity = transform.up * speed;
         if(soundManager){
             soundManager.ShootPlayerSoundPlay();
-        }else{
-            print("Sound manager not found");
         }
     }
 

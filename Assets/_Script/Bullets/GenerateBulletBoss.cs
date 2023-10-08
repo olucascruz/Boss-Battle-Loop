@@ -21,8 +21,6 @@ public class GenerateBulletBoss : MonoBehaviour
 
         if(soundManager && bossBulletSound){
             soundManager.AttackBossSoundPlay(bossBulletSound);
-        }else if(soundManager==null){
-            print("Sound manager not found");
         }
 
         float bulletSpeed = bullet.GetComponent<Bullet>().Speed;
