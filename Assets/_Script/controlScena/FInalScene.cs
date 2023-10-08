@@ -34,7 +34,7 @@ public class FInalScene : MonoBehaviour
     void Update()
     {
 
-        if(Input.GetKeyDown(KeyCode.Space)){
+        if(Input.GetKeyDown(KeyCode.M)){
             ChangeScene();
         }
     }
