@@ -12,6 +12,7 @@ TagManager:
   - EnemyBulletIce
   - IceSpike
   - DarkSphere
+  - InfoGame
   layers:
   - Default
   - TransparentFX

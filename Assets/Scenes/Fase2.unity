@@ -2222,7 +2222,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 5
   m_Sprite: {fileID: -1429171347, guid: e121ea0c333522c48a145b38398c5a9a, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.7, g: 0.7, b: 0.7, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -4214,7 +4214,7 @@ MonoBehaviour:
   speed: 3
   generateBulletBoss: {fileID: 160265149}
   iceSpike: {fileID: 94213882162583475, guid: 76e694bdf473a9147a427f3f84701a98, type: 3}
-  attackIceSpikeDelay: 0.5
+  attackIceSpikeDelay: 0.6
   attackIceSpikeAudio: {fileID: 693870121}
 --- !u!1 &1418853044
 GameObject:

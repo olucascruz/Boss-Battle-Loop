@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/HomeScene.unity
     guid: f6bad09152fd83540a1ae4ea327d4b0e
   - enabled: 1
+    path: Assets/Scenes/InitialScene.unity
+    guid: d6ca66b192080cb439329f2ade4595a7
+  - enabled: 1
     path: Assets/Scenes/Fase1.unity
     guid: 96098ae37e7a7e54bbb762370fd3b408
   - enabled: 1
@@ -17,6 +20,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Fase3.unity
     guid: dfb352d2a9728b042b74c2230bffe210
+  - enabled: 1
+    path: Assets/Scenes/wishRealized.unity
+    guid: 322cc4abb5b630a4ab10211595fb9d35
   - enabled: 1
     path: Assets/Scenes/FinalScene.unity
     guid: 4fea14309ae66c441abe866dbdc1efa0
