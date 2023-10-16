@@ -3,9 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+public enum GameState{
+    PLAY, GAMEOVER
+}
+
 public class GameController : MonoBehaviour
 {
     public static GameController gc;
+    private GameState gameState;
+    public GameState GameState{
+        get{return gameState;}
+    }
     private int qntBullet = 0;
     [SerializeField] private float BossLife = 100f;
     private float PlayerLife = 100f;
@@ -17,16 +25,10 @@ public class GameController : MonoBehaviour
     [SerializeField] private Image BossLifeImage;
 
     [SerializeField] private GameObject BossLifeSpace;
-
     [SerializeField] private Image PlayerLifeImage;
-
     [SerializeField] private GameObject PlayerLifeSpace;
-
-
     [SerializeField] private GameObject Portal;
-
     [SerializeField] private GameObject GameOver;
-
     [SerializeField] private GameObject ButtonsTouch;
 
     private InfoGame infoGame;
@@ -51,10 +53,15 @@ public class GameController : MonoBehaviour
     void Start()
     {
 
+
         if (Application.isMobilePlatform)
         {
             ButtonsTouch.SetActive(true);
+        }else{
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
         }
+        gameState = GameState.PLAY;
         originalBossLife = BossLife;
         infoGame = InfoGame.Instance;
         RefreshScreen();
@@ -74,7 +81,7 @@ public class GameController : MonoBehaviour
 
     }
 
-    
+
 
     public bool AddBullet()
     {
@@ -118,6 +125,9 @@ public class GameController : MonoBehaviour
         RefreshScreen();
         if (PlayerLife <= 0)
         {
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+            gameState = GameState.GAMEOVER;
             GameOver.SetActive(true);
             infoGame.AddKilled();
         }
