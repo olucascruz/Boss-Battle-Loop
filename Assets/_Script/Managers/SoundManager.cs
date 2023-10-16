@@ -11,6 +11,7 @@ public class SoundManager : MonoBehaviour
     {
         get{return instance;}
     }
+    private GameController gameController;
 
     // Start is called before the first frame update
     void Awake()
@@ -22,12 +23,19 @@ public class SoundManager : MonoBehaviour
         }
 
     }
+    void Start()
+    {
+        gameController = GameController.gc;
+    }
+
 
     public void ShootPlayerSoundPlay(){
         ShootPlayerSound.Play();
     }
     public void AttackBossSoundPlay(AudioSource audio){
-        audio.Play();
+        if(gameController.GameState == GameState.PLAY){
+            audio.Play();
+        }
     }
 
 
